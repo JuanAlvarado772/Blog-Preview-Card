@@ -1,0 +1,88 @@
+* { box-sizing: border-box;}
+html, body { height: 100%; margin: 0; font-family: 'Poppins', sans-serif; overflow: hidden; }
+
+body {
+  position: relative;
+ background: url("./assets/images/pexels-esan-2085998.jpg");
+  background-size: cover;
+background-position: center center; /* keeps middle locked */
+  background-repeat: no-repeat;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+}
+
+body::after {
+  content: "";
+  position: absolute;
+  inset: 0; 
+  background: inherit; 
+  background-size: inherit;
+  background-position: inherit;
+  background-repeat: inherit;
+  filter: blur(10px);   
+  transform: scale(1.1); 
+  z-index: -1; 
+}
+
+
+.Learning {
+     background: #2d545e;
+    padding: 6px 12px; 
+    border-radius: 4px;
+    display: inline-block;
+    color: white;
+
+}
+
+.date {
+    color: #12343b;
+}
+
+.pg {
+
+    margin-top: -15px;
+}
+.card p {
+    font-size: 12px;
+}
+
+.card h1 {
+    font-size: 25px;
+
+}
+
+img {
+text-align: center;
+ display: block;
+width: 100%;
+  border-radius: 20px;
+  margin-bottom: 16px;  
+}
+
+.card {
+position: relative;
+ max-width: 400px;
+  min-height: 500px;
+  background: #e1b382;
+  padding: 25px;
+  border-radius: 20px;
+  box-shadow: 8px 8px 0px black;
+
+}
+.name {
+    display: flex;          /* put children side by side */
+  align-items: center;
+  gap: 15px;
+  margin-top: 20px;
+  font-weight: bold;
+  font-style: italic;
+}
+.name img {
+    width: 60px;        /* make it small */
+  height: 60px;       /* keep it square */
+  object-fit: cover;  /* ensures it crops nicely */
+  border-radius: 50%;
+}

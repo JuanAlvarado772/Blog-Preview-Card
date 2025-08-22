@@ -5,7 +5,7 @@ body {
   position: relative;
  background: url("./assets/images/pexels-esan-2085998.jpg");
   background-size: cover;
-background-position: center center; /* keeps middle locked */
+background-position: center center; 
   background-repeat: no-repeat;
   display: flex;
   flex-direction: column;
@@ -73,7 +73,7 @@ position: relative;
 
 }
 .name {
-    display: flex;          /* put children side by side */
+    display: flex;          
   align-items: center;
   gap: 15px;
   margin-top: 20px;
@@ -81,8 +81,8 @@ position: relative;
   font-style: italic;
 }
 .name img {
-    width: 60px;        /* make it small */
-  height: 60px;       /* keep it square */
-  object-fit: cover;  /* ensures it crops nicely */
+    width: 60px;        
+  height: 60px;       
+  object-fit: cover;  
   border-radius: 50%;
 }

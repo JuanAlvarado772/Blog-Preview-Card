@@ -1,17 +1,41 @@
-* { box-sizing: border-box;}
-html, body { height: 100%; margin: 0; font-family: 'Poppins', sans-serif; overflow: hidden; }
+* { 
+  box-sizing: border-box;
+}
+html, body { 
+  height: 100%; 
+  margin: 0; 
+  font-family: 'Poppins', sans-serif; 
+  font-size: 62.5%; 
+}
+
+html, body { min-height: 100dvh; overflow-x: hidden; }
+
+@media (max-width: 75em) {
+  html {
+    font-size: 60%;
+  }
+}
+@media (max-width: 61.25em) {
+  html {
+    font-size: 58%;
+  }
+}
+@media (max-width: 28.75em) {
+  html {
+    font-size: 55%;
+  }
+}
 
 body {
   position: relative;
- background: url("./assets/images/pexels-esan-2085998.jpg");
+  background: url("./assets/images/pexels-esan-2085998.jpg");
   background-size: cover;
-background-position: center center; 
+  background-position: center center; 
   background-repeat: no-repeat;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-
 }
 
 body::after {
@@ -27,62 +51,91 @@ body::after {
   z-index: -1; 
 }
 
-
 .Learning {
-     background: #2d545e;
-    padding: 6px 12px; 
-    border-radius: 4px;
-    display: inline-block;
-    color: white;
-
+  background: #2d545e;
+  padding: 6px 12px; 
+  border-radius: 4px;
+  display: inline-block;
+  color: white;
+  font-size: 1rem;
 }
 
 .date {
-    color: #12343b;
+  color: #12343b;
 }
 
 .pg {
-
-    margin-top: -15px;
+  margin-top: -15px;
 }
+
 .card p {
-    font-size: 12px;
+  font-size: 1.2rem;
 }
 
 .card h1 {
-    font-size: 25px;
-
+  font-size: 2.5rem;
 }
 
 img {
-text-align: center;
- display: block;
-width: 100%;
+  text-align: center;
+  display: block;
+  width: 100%;
   border-radius: 20px;
   margin-bottom: 16px;  
 }
 
 .card {
-position: relative;
- max-width: 400px;
+  position: relative;
+  min-width: 0;
+  max-width: 400px;
   min-height: 500px;
   background: #e1b382;
   padding: 25px;
   border-radius: 20px;
   box-shadow: 8px 8px 0px black;
-
 }
+
 .name {
-    display: flex;          
+  display: flex;          
   align-items: center;
   gap: 15px;
   margin-top: 20px;
   font-weight: bold;
   font-style: italic;
 }
+
 .name img {
-    width: 60px;        
+  width: 60px;        
   height: 60px;       
   object-fit: cover;  
   border-radius: 50%;
 }
+
+@media (max-width: 480px) {
+  .card {
+    box-shadow: 6px 6px 0px black;
+    border-radius: 16px;
+  }
+  .card > img { 
+    border-radius: 16px; 
+  }
+  body { 
+    padding: 3vh 3vw; 
+  }
+}
+
+
+@media (min-width: 481px) and (max-width: 768px) {
+  .card { 
+    width: min(88vw, 460px); 
+  }
+}
+
+
+@media (min-width: 1200px) {
+  .card { 
+    width: min(60vw, 520px); 
+  }
+}
+
+
